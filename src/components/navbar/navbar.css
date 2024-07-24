@@ -1,0 +1,138 @@
+.gpt3__navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 1rem 6rem;
+}
+
+.gpt3__navbar-links{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  /* justify-content: center;  */
+}
+ 
+.gpt3__navbar-links_logo {
+  margin-right: 4rem;
+}
+
+.gpt3__navbar-links_logo img{
+  width:62.52px;
+  height: 16px;
+} 
+
+.gpt3__navbar-links_container{
+  display: flex;
+  flex-direction: row;
+}
+
+.gpt3__navbar-sign{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gpt3__navbar-links_container p,
+.gpt3__navbar-sign p,
+.gpt3__navbar-menu_container p{
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.gpt3__navbar-sign button,
+.gpt3__navbar-menu_container button{
+  font-size: 18px;
+  line-height: 25px;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #FF4820;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gpt3__navbar-menu{
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.gpt3__navbar-menu_container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width:210px;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0,0,0,0,2);
+}
+
+.gpt3__navbar-menu_container-linkes-sign{
+  display: none;
+}
+
+@media screen and (max-width:1050px) {
+  .gpt3__navbar-links_container{
+    display: none;
+  }
+  .gpt3__navbar-menu{
+    display: flex;
+  }
+    .gpt3__menu-links {
+      padding: 10px;
+    }
+}
+@media screen and (max-width:700px) {
+  .gpt3__navbar{
+    padding: 2 rem 4rem;
+  }
+    .gpt3__menu-links {
+      padding: 10px;
+    }
+
+}
+@media screen and (max-width:550px) {
+  .gpt3__navbar{
+    padding: 2rem;
+  }
+  .gpt3__navbar-sign{
+    display: none;
+  }
+  .gpt3__navbar-menu_container{
+    top: 40px;
+  }
+    .gpt3__menu-links {
+      padding: 5px;
+    }
+  .gpt3__navbar-menu_container-linkes-sign{
+    display: block;
+    margin-top: 20px;
+  }
+  
+  .gpt3__navbar-menu_container-linkes-sign p{
+    margin-right: 20px;
+  }
+
+  .gpt3__navbar-menu_container-linkes-sign button{
+    font-size: 15px;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 3px;
+  }
+  
+}
